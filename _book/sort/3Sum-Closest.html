@@ -1,0 +1,2981 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>3Sum Closest 题解 | Leetcode Summary</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../sort/3Sum.html" />
+    
+    
+    <link rel="prev" href="../sort/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="1419875454975">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="dp/README.html">
+            
+                
+                    <a href="../dp/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         DP, 动态规划类
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="dp/Best-Time-to-Buy-and-Sell-Stock-III.html">
+            
+                
+                    <a href="../dp/Best-Time-to-Buy-and-Sell-Stock-III.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Best Time to Buy and Sell Stock III 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="dp/Best-Time-to-Buy-and-Sell-Stock.html">
+            
+                
+                    <a href="../dp/Best-Time-to-Buy-and-Sell-Stock.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Best Time to Buy and Sell Stock 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="dp/Climbing-Stairs.html">
+            
+                
+                    <a href="../dp/Climbing-Stairs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Climbing Stairs 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="dp/Decode-Ways.html">
+            
+                
+                    <a href="../dp/Decode-Ways.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Decode Ways 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="dp/Distinct-Subsequences.html">
+            
+                
+                    <a href="../dp/Distinct-Subsequences.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Distinct Subsequences 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="dp/Edit-Distance.html">
+            
+                
+                    <a href="../dp/Edit-Distance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         Edit Distance 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="dp/Interleaving-String.html">
+            
+                
+                    <a href="../dp/Interleaving-String.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         Interleaving String 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="dp/Longest-Palindromic-Substring.html">
+            
+                
+                    <a href="../dp/Longest-Palindromic-Substring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         Longest Palindromic Substring 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="dp/Maximum-Product-Subarray.html">
+            
+                
+                    <a href="../dp/Maximum-Product-Subarray.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         Maximum Product Subarray 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="dp/Maximum-Subarray.html">
+            
+                
+                    <a href="../dp/Maximum-Subarray.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         Maximum Subarray 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="dp/Minimum-Path-Sum.html">
+            
+                
+                    <a href="../dp/Minimum-Path-Sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         Minimum Path Sum 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.12" data-path="dp/Palindrome-Partitioning.html">
+            
+                
+                    <a href="../dp/Palindrome-Partitioning.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                         Palindrome Partitioning 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.13" data-path="dp/Palindrome-Partitioning-II.html">
+            
+                
+                    <a href="../dp/Palindrome-Partitioning-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                         Palindrome Partitioning II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.14" data-path="dp/Scramble-String.html">
+            
+                
+                    <a href="../dp/Scramble-String.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                         Scramble String 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.15" data-path="dp/Triangle.html">
+            
+                
+                    <a href="../dp/Triangle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.15.</b>
+                        
+                         Triangle 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.16" data-path="dp/Unique-Binary-Search-Trees.html">
+            
+                
+                    <a href="../dp/Unique-Binary-Search-Trees.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.16.</b>
+                        
+                         Unique Binary Search Trees 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.17" data-path="dp/Unique-Paths-II.html">
+            
+                
+                    <a href="../dp/Unique-Paths-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.</b>
+                        
+                         Unique Paths II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.18" data-path="dp/Word-Break.html">
+            
+                
+                    <a href="../dp/Word-Break.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.18.</b>
+                        
+                         Word Break 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.19" data-path="dp/Word-Break-II.html">
+            
+                
+                    <a href="../dp/Word-Break-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.19.</b>
+                        
+                         Word Break II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="list/README.html">
+            
+                
+                    <a href="../list/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         list, 链表相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="list/Add-Two-Numbers.html">
+            
+                
+                    <a href="../list/Add-Two-Numbers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Add Two Numbers 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="list/Convert-Sorted-List-to-Binary-Search-Tree.html">
+            
+                
+                    <a href="../list/Convert-Sorted-List-to-Binary-Search-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Convert Sorted List to Binary Search Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="list/Copy-List-with-Random-Pointer.html">
+            
+                
+                    <a href="../list/Copy-List-with-Random-Pointer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Copy List with Random Pointer 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="list/Insertion-Sort-List.html">
+            
+                
+                    <a href="../list/Insertion-Sort-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         Insertion Sort List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="list/LRU-Cache.html">
+            
+                
+                    <a href="../list/LRU-Cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         LRU Cache 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="list/Linked-List-Cycle.html">
+            
+                
+                    <a href="../list/Linked-List-Cycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         Linked List Cycle 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="list/Linked-List-Cycle-II.html">
+            
+                
+                    <a href="../list/Linked-List-Cycle-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         Linked List Cycle II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="list/Merge-Two-Sorted-Lists.html">
+            
+                
+                    <a href="../list/Merge-Two-Sorted-Lists.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         Merge Two Sorted Lists 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.9" data-path="list/Merge-k-Sorted-Lists.html">
+            
+                
+                    <a href="../list/Merge-k-Sorted-Lists.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                         Merge k Sorted Lists 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10" data-path="list/Partition-List.html">
+            
+                
+                    <a href="../list/Partition-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                         Partition List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.11" data-path="list/Remove-Duplicates-from-Sorted-List.html">
+            
+                
+                    <a href="../list/Remove-Duplicates-from-Sorted-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                         Remove Duplicates from Sorted List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.12" data-path="list/Remove-Duplicates-from-Sorted-List-II.html">
+            
+                
+                    <a href="../list/Remove-Duplicates-from-Sorted-List-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                         Remove Duplicates from Sorted List II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.13" data-path="list/Remove-Nth-Node-From-End-of-List.html">
+            
+                
+                    <a href="../list/Remove-Nth-Node-From-End-of-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                         Remove Nth Node From End of List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.14" data-path="list/Reorder-List.html">
+            
+                
+                    <a href="../list/Reorder-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                         Reorder List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.15" data-path="list/Reverse-Linked-List-II.html">
+            
+                
+                    <a href="../list/Reverse-Linked-List-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                         Reverse Linked List II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.16" data-path="list/Reverse-Nodes-in-k-Group.html">
+            
+                
+                    <a href="../list/Reverse-Nodes-in-k-Group.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                         Reverse Nodes in k-Group 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.17" data-path="list/Rotate-List.html">
+            
+                
+                    <a href="../list/Rotate-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                         Rotate List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.18" data-path="list/Sort-List.html">
+            
+                
+                    <a href="../list/Sort-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.18.</b>
+                        
+                         Sort List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.19" data-path="list/Swap-Nodes-in-Pairs.html">
+            
+                
+                    <a href="../list/Swap-Nodes-in-Pairs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.19.</b>
+                        
+                         Swap Nodes in Pairs 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="binary-tree/README.html">
+            
+                
+                    <a href="../binary-tree/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         binary tree, 二叉树相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="binary-tree/Balanced-Binary-Tree.html">
+            
+                
+                    <a href="../binary-tree/Balanced-Binary-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Balanced Binary Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="binary-tree/Binary-Tree-Inorder-Traversal.html">
+            
+                
+                    <a href="../binary-tree/Binary-Tree-Inorder-Traversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         Binary Tree Inorder Traversal 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="binary-tree/Binary-Tree-Level-Order-Traversal.html">
+            
+                
+                    <a href="../binary-tree/Binary-Tree-Level-Order-Traversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         Binary Tree Level Order Traversal 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="binary-tree/Binary-Tree-Level-Order-Traversal-II.html">
+            
+                
+                    <a href="../binary-tree/Binary-Tree-Level-Order-Traversal-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         Binary Tree Level Order Traversal II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.5" data-path="binary-tree/Binary-Tree-Maximum-Path-Sum.html">
+            
+                
+                    <a href="../binary-tree/Binary-Tree-Maximum-Path-Sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                         Binary Tree Maximum Path Sum 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.6" data-path="binary-tree/Binary-Tree-Postorder-Traversal.html">
+            
+                
+                    <a href="../binary-tree/Binary-Tree-Postorder-Traversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                         Binary Tree Postorder Traversal 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.7" data-path="binary-tree/Binary-Tree-Preorder-Traversal.html">
+            
+                
+                    <a href="../binary-tree/Binary-Tree-Preorder-Traversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                         Binary Tree Preorder Traversal 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.8" data-path="binary-tree/Binary-Tree-Zigzag-Level-Order-Traversal.html">
+            
+                
+                    <a href="../binary-tree/Binary-Tree-Zigzag-Level-Order-Traversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                         Binary Tree Zigzag Level Order Traversal 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.9" data-path="binary-tree/Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.html">
+            
+                
+                    <a href="../binary-tree/Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                         Construct Binary Tree from Inorder and Postorder Traversal 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.10" data-path="binary-tree/Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.html">
+            
+                
+                    <a href="../binary-tree/Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                         Construct Binary Tree from Preorder and Inorder Traversal 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.11" data-path="binary-tree/Convert-Sorted-List-to-Binary-Search-Tree.html">
+            
+                
+                    <a href="../binary-tree/Convert-Sorted-List-to-Binary-Search-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                         Convert Sorted List to Binary Search Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.12" data-path="binary-tree/Flatten-Binary-Tree-to-Linked-List.html">
+            
+                
+                    <a href="../binary-tree/Flatten-Binary-Tree-to-Linked-List.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                         Flatten Binary Tree to Linked List 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.13" data-path="binary-tree/Maximum-Depth-of-Binary-Tree.html">
+            
+                
+                    <a href="../binary-tree/Maximum-Depth-of-Binary-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                         Maximum Depth of Binary Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.14" data-path="binary-tree/Minimum-Depth-of-Binary-Tree.html">
+            
+                
+                    <a href="../binary-tree/Minimum-Depth-of-Binary-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                         Minimum Depth of Binary Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.15" data-path="binary-tree/Path-Sum.html">
+            
+                
+                    <a href="../binary-tree/Path-Sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.15.</b>
+                        
+                         Path Sum 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.16" data-path="binary-tree/Path-Sum-II.html">
+            
+                
+                    <a href="../binary-tree/Path-Sum-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.16.</b>
+                        
+                         Path Sum II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.17" data-path="binary-tree/Populating-Next-Right-Pointers-in-Each-Node.html">
+            
+                
+                    <a href="../binary-tree/Populating-Next-Right-Pointers-in-Each-Node.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.17.</b>
+                        
+                         Populating Next Right Pointers in Each Node 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.18" data-path="binary-tree/populating-next-right-pointers-in-each-node-ii.html">
+            
+                
+                    <a href="../binary-tree/populating-next-right-pointers-in-each-node-ii.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.18.</b>
+                        
+                         Populating Next Right Pointers in Each Node II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.19" data-path="binary-tree/Recover-Binary-Search-Tree.html">
+            
+                
+                    <a href="../binary-tree/Recover-Binary-Search-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.19.</b>
+                        
+                         Recover Binary Search Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.20" data-path="binary-tree/Same-Tree.html">
+            
+                
+                    <a href="../binary-tree/Same-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.20.</b>
+                        
+                         Same Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.21" data-path="binary-tree/Sum-Root-to-Leaf-Numbers.html">
+            
+                
+                    <a href="../binary-tree/Sum-Root-to-Leaf-Numbers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.21.</b>
+                        
+                         Sum Root to Leaf Numbers 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.22" data-path="binary-tree/Symmetric-Tree.html">
+            
+                
+                    <a href="../binary-tree/Symmetric-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.22.</b>
+                        
+                         Symmetric Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.23" data-path="binary-tree/Unique-Binary-Search-Trees.html">
+            
+                
+                    <a href="../binary-tree/Unique-Binary-Search-Trees.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.23.</b>
+                        
+                         Unique Binary Search Trees 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.24" data-path="binary-tree/Unique-Binary-Search-Trees-II.html">
+            
+                
+                    <a href="../binary-tree/Unique-Binary-Search-Trees-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.24.</b>
+                        
+                         Unique Binary Search Trees II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.25" data-path="binary-tree/Validate-Binary-Search-Tree.html">
+            
+                
+                    <a href="../binary-tree/Validate-Binary-Search-Tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.25.</b>
+                        
+                         Validate Binary Search Tree 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="sort/README.html">
+            
+                
+                    <a href="../sort/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         sort, 排序相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="4.1" data-path="sort/3Sum-Closest.html">
+            
+                
+                    <a href="../sort/3Sum-Closest.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         3Sum Closest 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="sort/3Sum.html">
+            
+                
+                    <a href="../sort/3Sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         3Sum 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="sort/4Sum.html">
+            
+                
+                    <a href="../sort/4Sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         4Sum 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="sort/Insert-Interval.html">
+            
+                
+                    <a href="../sort/Insert-Interval.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Insert Interval 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="sort/Longest-Consecutive-Sequence.html">
+            
+                
+                    <a href="../sort/Longest-Consecutive-Sequence.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         Longest Consecutive Sequence 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="sort/Merge-Intervals.html">
+            
+                
+                    <a href="../sort/Merge-Intervals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Merge Intervals 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="sort/Merge-Sorted-Array.html">
+            
+                
+                    <a href="../sort/Merge-Sorted-Array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         Merge Sorted Array 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.8" data-path="sort/Remove-Duplicates-from-Sorted-Array.html">
+            
+                
+                    <a href="../sort/Remove-Duplicates-from-Sorted-Array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                         Remove Duplicates from Sorted Array 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.9" data-path="sort/Remove-Duplicates-from-Sorted-Array-II.html">
+            
+                
+                    <a href="../sort/Remove-Duplicates-from-Sorted-Array-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                         Remove Duplicates from Sorted Array II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.10" data-path="sort/Sort-Colors.html">
+            
+                
+                    <a href="../sort/Sort-Colors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                         Sort Colors 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.11" data-path="sort/Two-Sum.html">
+            
+                
+                    <a href="../sort/Two-Sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.</b>
+                        
+                         Two Sum 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="search/README.html">
+            
+                
+                    <a href="../search/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         search, 搜索相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="search/First-Missing-Positive.html">
+            
+                
+                    <a href="../search/First-Missing-Positive.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         First Missing Positive 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="search/find-minimum-in-rotated-sorted-array.html">
+            
+                
+                    <a href="../search/find-minimum-in-rotated-sorted-array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Find Minimum in Rotated Sorted Array 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="search/find-minimum-in-rotated-sorted-array-II.html">
+            
+                
+                    <a href="../search/find-minimum-in-rotated-sorted-array-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Find Minimum in Rotated Sorted Array II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="search/Median-of-Two-Sorted-Arrays.html">
+            
+                
+                    <a href="../search/Median-of-Two-Sorted-Arrays.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Median of Two Sorted Arrays 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="search/Search-Insert-Position.html">
+            
+                
+                    <a href="../search/Search-Insert-Position.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         Search Insert Position 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="search/Search-a-2D-Matrix.html">
+            
+                
+                    <a href="../search/Search-a-2D-Matrix.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         Search a 2D Matrix 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="search/Search-for-a-Range.html">
+            
+                
+                    <a href="../search/Search-for-a-Range.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         Search for a Range 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.8" data-path="search/Search-in-Rotated-Sorted-Array.html">
+            
+                
+                    <a href="../search/Search-in-Rotated-Sorted-Array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                         Search in Rotated Sorted Array 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.9" data-path="search/Search-in-Rotated-Sorted-Array-II.html">
+            
+                
+                    <a href="../search/Search-in-Rotated-Sorted-Array-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                         Search in Rotated Sorted Array II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.10" data-path="search/Single-Number.html">
+            
+                
+                    <a href="../search/Single-Number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                         Single Number 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.11" data-path="search/Single-Number-II.html">
+            
+                
+                    <a href="../search/Single-Number-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                         Single Number II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="math/README.html">
+            
+                
+                    <a href="../math/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         math, 数学类相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="math/Add-Binary.html">
+            
+                
+                    <a href="../math/Add-Binary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Add Binary 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="math/Add-Two-Numbers.html">
+            
+                
+                    <a href="../math/Add-Two-Numbers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         Add Two Numbers 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="math/Divide-Two-Integers.html">
+            
+                
+                    <a href="../math/Divide-Two-Integers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Divide Two Integers 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4" data-path="math/Gray-Code.html">
+            
+                
+                    <a href="../math/Gray-Code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         Gray Code 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.5" data-path="math/Integer-to-Roman.html">
+            
+                
+                    <a href="../math/Integer-to-Roman.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                         Integer to Roman 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.6" data-path="math/Multiply-Strings.html">
+            
+                
+                    <a href="../math/Multiply-Strings.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                         Multiply Strings 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.7" data-path="math/Palindrome-Number.html">
+            
+                
+                    <a href="../math/Palindrome-Number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                         Palindrome Number 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.8" data-path="math/Plus-One.html">
+            
+                
+                    <a href="../math/Plus-One.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                         Plus One 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.9" data-path="math/Pow(x,-n">
+            
+                
+                    <a href="../math/Pow(x,-n">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                         Pow(x, n) 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.10" data-path="math/Reverse-Integer.html">
+            
+                
+                    <a href="../math/Reverse-Integer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                         Reverse Integer 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.11" data-path="math/Roman-to-Integer.html">
+            
+                
+                    <a href="../math/Roman-to-Integer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                         Roman to Integer 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.12" data-path="math/Sqrt(x">
+            
+                
+                    <a href="../math/Sqrt(x">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                         Sqrt(x) 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.13" data-path="math/String-to-Integer-(atoi">
+            
+                
+                    <a href="../math/String-to-Integer-(atoi">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                         String to Integer (atoi) 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.14" data-path="math/Valid-Number.html">
+            
+                
+                    <a href="../math/Valid-Number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                         Valid Number 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="string/README.html">
+            
+                
+                    <a href="../string/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         string, 字符串处理相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="string/Anagrams.html">
+            
+                
+                    <a href="../string/Anagrams.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         Anagrams 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="string/Count-and-Say.html">
+            
+                
+                    <a href="../string/Count-and-Say.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         Count and Say 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.3" data-path="string/Evaluate-Reverse-Polish-Notation.html">
+            
+                
+                    <a href="../string/Evaluate-Reverse-Polish-Notation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                         Evaluate Reverse Polish Notation 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.4" data-path="string/Implement-strStr(">
+            
+                
+                    <a href="../string/Implement-strStr(">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         Implement strStr() 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.5" data-path="string/Length-of-Last-Word.html">
+            
+                
+                    <a href="../string/Length-of-Last-Word.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                         Length of Last Word 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.6" data-path="string/Longest-Common-Prefix.html">
+            
+                
+                    <a href="../string/Longest-Common-Prefix.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                         Longest Common Prefix 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.7" data-path="string/Longest-Palindromic-Substring.html">
+            
+                
+                    <a href="../string/Longest-Palindromic-Substring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                         Longest Palindromic Substring 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.8" data-path="string/Longest-Substring-Without-Repeating-Characters.html">
+            
+                
+                    <a href="../string/Longest-Substring-Without-Repeating-Characters.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                         Longest Substring Without Repeating Characters 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.9" data-path="string/Longest-Valid-Parentheses.html">
+            
+                
+                    <a href="../string/Longest-Valid-Parentheses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                         Longest Valid Parentheses 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.10" data-path="string/Minimum-Window-Substring.html">
+            
+                
+                    <a href="../string/Minimum-Window-Substring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                         Minimum Window Substring 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.11" data-path="string/Regular-Expression-Matching.html">
+            
+                
+                    <a href="../string/Regular-Expression-Matching.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                         Regular Expression Matching 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.12" data-path="string/Reverse-Words-in-a-String.html">
+            
+                
+                    <a href="../string/Reverse-Words-in-a-String.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                         Reverse Words in a String 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.13" data-path="string/Simplify-Path.html">
+            
+                
+                    <a href="../string/Simplify-Path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                         Simplify Path 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.14" data-path="string/Text-Justification.html">
+            
+                
+                    <a href="../string/Text-Justification.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                         Text Justification 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.15" data-path="string/Valid-Parentheses.html">
+            
+                
+                    <a href="../string/Valid-Parentheses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.15.</b>
+                        
+                         Valid Parentheses 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.16" data-path="string/Wildcard-Matching.html">
+            
+                
+                    <a href="../string/Wildcard-Matching.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.16.</b>
+                        
+                         Wildcard Matching 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.17" data-path="string/ZigZag-Conversion.html">
+            
+                
+                    <a href="../string/ZigZag-Conversion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.17.</b>
+                        
+                         ZigZag Conversion 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="combination-permutation/README.html">
+            
+                
+                    <a href="../combination-permutation/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         combination and permutation, 排列组合相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="combination-permutation/Combinations.html">
+            
+                
+                    <a href="../combination-permutation/Combinations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Combinations 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="combination-permutation/Combination-Sum.html">
+            
+                
+                    <a href="../combination-permutation/Combination-Sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         Combination Sum 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="combination-permutation/Combination-Sum-II.html">
+            
+                
+                    <a href="../combination-permutation/Combination-Sum-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         Combination Sum II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.4" data-path="combination-permutation/Letter-Combinations-of-a-Phone-Number.html">
+            
+                
+                    <a href="../combination-permutation/Letter-Combinations-of-a-Phone-Number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                         Letter Combinations of a Phone Number 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.5" data-path="combination-permutation/Next-Permutation.html">
+            
+                
+                    <a href="../combination-permutation/Next-Permutation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                         Next Permutation 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.6" data-path="combination-permutation/Palindrome-Partitioning.html">
+            
+                
+                    <a href="../combination-permutation/Palindrome-Partitioning.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                         Palindrome Partitioning 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.7" data-path="combination-permutation/Permutation-Sequence.html">
+            
+                
+                    <a href="../combination-permutation/Permutation-Sequence.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.7.</b>
+                        
+                         Permutation Sequence 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.8" data-path="combination-permutation/Permutations.html">
+            
+                
+                    <a href="../combination-permutation/Permutations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.8.</b>
+                        
+                         Permutations 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.9" data-path="combination-permutation/Permutations-II.html">
+            
+                
+                    <a href="../combination-permutation/Permutations-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.9.</b>
+                        
+                         Permutations II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.10" data-path="combination-permutation/Subsets.html">
+            
+                
+                    <a href="../combination-permutation/Subsets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.10.</b>
+                        
+                         Subsets 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.11" data-path="combination-permutation/Subsets-II.html">
+            
+                
+                    <a href="../combination-permutation/Subsets-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.11.</b>
+                        
+                         Subsets II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.12" data-path="combination-permutation/Unique-Paths.html">
+            
+                
+                    <a href="../combination-permutation/Unique-Paths.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.12.</b>
+                        
+                         Unique Paths 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="matrix/README.html">
+            
+                
+                    <a href="../matrix/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         matrix, 二维数组, 矩阵相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="matrix/Rotate-Image.html">
+            
+                
+                    <a href="../matrix/Rotate-Image.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         Rotate Image 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.2" data-path="matrix/Set-Matrix-Zeroes.html">
+            
+                
+                    <a href="../matrix/Set-Matrix-Zeroes.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                         Set Matrix Zeroes 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.3" data-path="matrix/Spiral-Matrix.html">
+            
+                
+                    <a href="../matrix/Spiral-Matrix.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                         Spiral Matrix 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.4" data-path="matrix/Spiral-Matrix-II.html">
+            
+                
+                    <a href="../matrix/Spiral-Matrix-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                         Spiral Matrix II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.5" data-path="matrix/Maximal-Rectangle.html">
+            
+                
+                    <a href="../matrix/Maximal-Rectangle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                         Maximal Rectangle 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="backtracking/README.html">
+            
+                
+                    <a href="../backtracking/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         回溯, BFS/DFS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="10.1" data-path="backtracking/Clone-Graph.html">
+            
+                
+                    <a href="../backtracking/Clone-Graph.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                         Clone Graph 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.2" data-path="backtracking/Generate-Parentheses.html">
+            
+                
+                    <a href="../backtracking/Generate-Parentheses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                         Generate Parentheses 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.3" data-path="backtracking/N-Queens.html">
+            
+                
+                    <a href="../backtracking/N-Queens.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                         N-Queens 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.4" data-path="backtracking/N-Queens-II.html">
+            
+                
+                    <a href="../backtracking/N-Queens-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                         N-Queens II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.5" data-path="backtracking/Restore-IP-Addresses.html">
+            
+                
+                    <a href="../backtracking/Restore-IP-Addresses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                         Restore IP Addresses 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.6" data-path="backtracking/Sudoku-Solver.html">
+            
+                
+                    <a href="../backtracking/Sudoku-Solver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                         Sudoku Solver 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.7" data-path="backtracking/Surrounded-Regions.html">
+            
+                
+                    <a href="../backtracking/Surrounded-Regions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.7.</b>
+                        
+                         Surrounded Regions 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.8" data-path="backtracking/Word-Ladder.html">
+            
+                
+                    <a href="../backtracking/Word-Ladder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.8.</b>
+                        
+                         Word Ladder 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.9" data-path="backtracking/Word-Ladder-II.html">
+            
+                
+                    <a href="../backtracking/Word-Ladder-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.9.</b>
+                        
+                         Word Ladder II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.10" data-path="backtracking/Word-Search.html">
+            
+                
+                    <a href="../backtracking/Word-Search.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.10.</b>
+                        
+                         Word Search 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="greedy/README.html">
+            
+                
+                    <a href="../greedy/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         greedy, 贪心
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="11.1" data-path="greedy/Best-Time-to-Buy-and-Sell-Stock-II.html">
+            
+                
+                    <a href="../greedy/Best-Time-to-Buy-and-Sell-Stock-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                         Best Time to Buy and Sell Stock II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.2" data-path="greedy/Jump-Game.html">
+            
+                
+                    <a href="../greedy/Jump-Game.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                         Jump Game 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.3" data-path="greedy/Jump-Game-II.html">
+            
+                
+                    <a href="../greedy/Jump-Game-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                         Jump Game II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="others/README.html">
+            
+                
+                    <a href="../others/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         其他
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="12.1" data-path="others/Candy.html">
+            
+                
+                    <a href="../others/Candy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                         Candy 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.2" data-path="others/Container-With-Most-Water.html">
+            
+                
+                    <a href="../others/Container-With-Most-Water.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                         Container With Most Water 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.3" data-path="others/Gas-Station.html">
+            
+                
+                    <a href="../others/Gas-Station.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                         Gas Station 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.4" data-path="others/Gray-Code.html">
+            
+                
+                    <a href="../others/Gray-Code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                         Gray Code 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.5" data-path="others/Max-Points-on-a-Line.html">
+            
+                
+                    <a href="../others/Max-Points-on-a-Line.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                         Max Points on a Line 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.6" data-path="others/Pascal&#39;s-Triangle.html">
+            
+                
+                    <a href="../others/Pascal&#39;s-Triangle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.6.</b>
+                        
+                         Pascal&#39;s Triangle 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.7" data-path="others/Pascal&#39;s-Triangle-II.html">
+            
+                
+                    <a href="../others/Pascal&#39;s-Triangle-II.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.7.</b>
+                        
+                         Pascal&#39;s Triangle II 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.8" data-path="others/Remove-Element.html">
+            
+                
+                    <a href="../others/Remove-Element.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.8.</b>
+                        
+                         Remove Element 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.9" data-path="others/Trapping-Rain-Water.html">
+            
+                
+                    <a href="../others/Trapping-Rain-Water.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.9.</b>
+                        
+                         Trapping Rain Water 题解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Leetcode Summary</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_8351">
+                    
+                        <h1 id="3sum-closest">3Sum Closest</h1>
+<p>题目来源：<a href="https://oj.leetcode.com/problems/3sum-closest/" target="_blank">3Sum Closest</a></p>
+<p>&gt;
+    Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+        For example, given array S = {-1 2 1 -4}, and target = 1.
+        The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).</p>
+<p>解题思路：</p>
+<p>跟<a href="./3sum.html">3-sum</a>思路一致。</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">int</span> threeSumClosest(<span class="hljs-stl_container"><span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;</span> &amp;num, <span class="hljs-keyword">int</span> target) 
+{
+   <span class="hljs-keyword">int</span> n = num.size();
+   <span class="hljs-keyword">int</span> result = <span class="hljs-number">0</span>;
+   <span class="hljs-keyword">int</span> closest = INT_MAX;
+   std::sort(num.begin(), num.end());
+   <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n-<span class="hljs-number">2</span>; i++)
+   {
+      <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span> &amp;&amp; num[i-<span class="hljs-number">1</span>] == num[i]) <span class="hljs-keyword">continue</span>;
+      <span class="hljs-keyword">int</span> begin = i+<span class="hljs-number">1</span>;
+      <span class="hljs-keyword">int</span> end = n - <span class="hljs-number">1</span>;
+      <span class="hljs-keyword">while</span>(begin &lt; end)
+      {
+          <span class="hljs-keyword">int</span> sum = num[i] + num[begin] + num[end];
+          <span class="hljs-keyword">if</span>(closest &gt; <span class="hljs-built_in">abs</span>(sum-target))
+               result = sum, closest = <span class="hljs-built_in">abs</span>(sum-target);
+          <span class="hljs-keyword">if</span>(sum &gt; target)
+              --end;
+          <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sum &lt; target)
+              ++begin;
+          <span class="hljs-keyword">else</span>
+               <span class="hljs-keyword">return</span> sum;         
+       }
+    }
+   <span class="hljs-keyword">return</span> move(result); 
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../sort/README.html" class="navigation navigation-prev " aria-label="Previous page: sort, 排序相关"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../sort/3Sum.html" class="navigation navigation-next " aria-label="Next page: 3Sum 题解"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

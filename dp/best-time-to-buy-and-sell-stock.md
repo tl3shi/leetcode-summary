@@ -11,22 +11,24 @@
 
 解题思路：
 
-最简单就是$$O(n^2)$$暴力解法，可惜超时，过不了。
+最简单就是O(n^2)暴力解法，可惜超时，过不了。
 用DP, dp[i]表示前i个的最大利润。
 
 ```cpp
-int maxProfit(vector<int> &prices)
-{
-    int n = prices.size();
-    if(n <= 1) return 0;
-    vector<int> dp(n, 0);
-    int min_ = prices[0];
-    for(int i = 1; i < n; i++)
+	
+	int maxProfit(vector<int> &prices) 
     {
-        dp[i] = std::max(dp[i-1], prices[i]-min_);
-        min_ = std::min(min_, prices[i]);
+        int n = prices.size();
+        if(n <= 1) return 0;
+        vector<int> dp(n, 0);
+        int min_ = prices[0];
+        for(int i = 1; i < n; i++)
+        {
+            dp[i] = std::max(dp[i-1], prices[i]-min_);
+            min_ = std::min(min_, prices[i]);
+        }
+        return dp[n-1];
     }
-    return dp[n-1];
-}
 ```
+
 

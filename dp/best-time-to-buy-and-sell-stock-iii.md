@@ -14,35 +14,36 @@
 
 解题思路：
 
-从[Best Time to Buy and Sell Stock](./best-time-to-buy-and-sell-stock.html)可知, 可以在O(n)的时间内，可以得到某个区间内的一次交易最大利润。设i从1到n-2，那么针对每一个i，看看在prices的子序列[0,...,i][i,...,n-1]上分别取得的最大利润即可，时间复杂度是$$O(n^2)$$。
+从[Best Time to Buy and Sell Stock](./best-time-to-buy-and-sell-stock.html)可知, 可以在O(n)的时间内，可以得到某个区间内的一次交易最大利润。设i从1到n-2，那么针对每一个i，看看在prices的子序列[0,...,i][i,...,n-1]上分别取得的最大利润即可，时间复杂度是O(n^2)。
 
 ```cpp
-int maxSub(vector<int> &prices, int start, int end)
-{
-    vector<int> dp(end-start+1);
-    dp[0] = 0;
-    int min = prices[start];
-    for(int i = start+1; i <= end; i++)
+	
+	int maxSub(vector<int> &prices, int start, int end)
     {
-        dp[i-start] = std::max(dp[i-start-1], prices[i]-min);
-        min = std::min(min, prices[i]);
+        vector<int> dp(end-start+1);
+        dp[0] = 0;
+        int min = prices[start];
+        for(int i = start+1; i <= end; i++)
+        {
+            dp[i-start] = std::max(dp[i-start-1], prices[i]-min);
+            min = std::min(min, prices[i]);
+        }
+        return dp[end-start];
     }
-    return dp[end-start];
-}
-
-int maxProfit(vector<int> &prices)
-{
-    int n = prices.size();
-    if(n <= 1) return 0;
-    int result = 0;
-    for(int i = 1; i < n-1; i++)
+    
+    int maxProfit(vector<int> &prices)
     {
-        result = std::max(result,
-                          maxSub(prices, 0, i) + maxSub(prices, i+1, n-1)
-                          );
+        int n = prices.size();
+        if(n <= 1) return 0;
+        int result = 0;
+        for(int i = 1; i < n-1; i++)
+        {
+            result = std::max(result,
+                              maxSub(prices, 0, i) + maxSub(prices, i+1, n-1)
+                              );
+        }
+        return result;
     }
-    return result;
-}
 ```
 
 可惜上面代码超时。
@@ -51,30 +52,31 @@ int maxProfit(vector<int> &prices)
 另外，[此类问题这里有分析](http://www.cnblogs.com/TenosDoIt/p/3436457.html).
 
 ```cpp
-
-int maxProfit2(vector<int> &prices)
-{
-    int n = prices.size();
-    if(n <= 1) return 0;
-    int result = 0;
-    vector<int> head(n, 0);
-    vector<int> tail(n, 0);
-    head[0] = 0;
-    int min = prices[0];
-    for(int i = 1; i < n; i++)
+	
+	int maxProfit2(vector<int> &prices)
     {
-        head[i] = std::max(head[i-1], prices[i]-min);
-        min = std::min(min, prices[i]);
+        int n = prices.size();
+        if(n <= 1) return 0;
+        int result = 0;
+        vector<int> head(n, 0);
+        vector<int> tail(n, 0);
+        head[0] = 0;
+        int min = prices[0];
+        for(int i = 1; i < n; i++)
+        {
+            head[i] = std::max(head[i-1], prices[i]-min);
+            min = std::min(min, prices[i]);
+        }
+        tail[n-1] = 0;//tail[i], [i:n-1]
+        int max = prices[n-1];
+        for(int i = n-2; i >=0; i--)
+        {
+            tail[i] = std::max(tail[i+1], max-prices[i]);
+            max = std::max(max, prices[i]);
+        }
+        for(int i = 0; i < n; i++)
+            result = std::max(result, head[i] + tail[i]);
+        return result;
     }
-    tail[n-1] = 0;//tail[i], [i:n-1]
-    int max = prices[n-1];
-    for(int i = n-2; i >=0; i--)
-    {
-        tail[i] = std::max(tail[i+1], max-prices[i]);
-        max = std::max(max, prices[i]);
-    }
-    for(int i = 0; i < n; i++)
-        result = std::max(result, head[i] + tail[i]);
-    return result;
-}
 ```
+
